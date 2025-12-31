@@ -1,6 +1,6 @@
 ## Challenge: Bandit Level 5 → Level 6
 
-Hiding secrets via obscure filenames is ineffective; attackers enumerate systematically using file metadata.
+Simply hiding files deeper or naming them oddly does not protect sensitive data.
 
 **Commands Used:**
 ```bash
@@ -18,7 +18,7 @@ HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 
 ## Challenge: Bandit Level 6 → Level 7
 
-Misconfigured permissions expand the attack surface, exposing secrets even outside user home directories.
+Poor permission management can expose secrets anywhere on the system.
 
 **Commands Used:**
 ```bash
@@ -42,7 +42,7 @@ morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 
 ## Challenge: Bandit Level 7 → Level 8
 
-Storing secrets in plaintext relies on obscurity and fails against simple content inspection.
+Storing passwords in plain text makes them easy to discover.
 
 **Commands Used:**
 ```bash
@@ -56,7 +56,7 @@ dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 
 ## Challenge: Bandit Level 8 → Level 9
 
-Redundancy does not provide security; basic data filtering easily isolates anomalies.
+Repetition does not add security; simple filtering reveals sensitive data.
 
 **Commands Used:**
 ```bash
@@ -70,7 +70,7 @@ bandit8@bandit:~$ sort data.txt | uniq -u
 
 ## Challenge: Bandit Level 9 → Level 10
 
-Encoding data inside files does not secure it; inspection tools reveal embedded secrets
+Hiding data in unusual file formats does not prevent access.
 
 **Commands Used:**
 ```bash
@@ -87,7 +87,7 @@ FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 
 ## Challenge: Bandit Level 10 → Level 11
 
-Encoding is reversible and should never be treated as encryption.
+Encoding is not encryption and offers no real security.
 
 **Commands Used:**
 ```bash
